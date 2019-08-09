@@ -43,7 +43,7 @@ public class MyFirstSwingGUI {
 		// 13. Re-pack the JFrame object.
 		jf.pack();
 		// 14. Run the program one more time. Do you see the image?
-		System.out.print("3");
+		
 	}
 
 	public ImageIcon loadImage() {
