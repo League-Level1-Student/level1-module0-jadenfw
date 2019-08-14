@@ -56,7 +56,7 @@ public class BodyPartQuiz {
 		initializeGui();
 		// 4. Ask the user who this person is and store their answer
 		String guess = JOptionPane.showInputDialog("who is this?");
-		if(guess.contentEquals("jfk"))
+		if(guess.contentEquals("arnold"))
 		{
 			JOptionPane.showMessageDialog(null, "CORRECT");
 			score++;
@@ -69,14 +69,49 @@ public class BodyPartQuiz {
 		// -- Tell them they are wrong and who the person is
 		else
 		{
-			JOptionPane.showMessageDialog(null, "wrong the person is jfk");
+			JOptionPane.showMessageDialog(null, "wrong the person is arnold");
 		}
 		// 7. Use the showNextImage() method below to get the next image
 		showNextImage();
 
 		// 8. .... repeat 4-7 for all your images.....
-
+		String guess2 = JOptionPane.showInputDialog("who is this?");
+		if(guess2.contentEquals("leonardo"))
+		{
+			JOptionPane.showMessageDialog(null, "CORRECT");
+			score++;
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, "wrong the person is leonardo");
+		}
+		showNextImage();
+		
+		String guess3 = JOptionPane.showInputDialog("who is this?");
+		if(guess3.contentEquals("morgan"))
+		{
+			JOptionPane.showMessageDialog(null, "CORRECT");
+			score++;
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, "wrong the person is morgan");
+		}
+		showNextImage();
+		
+		String guess4 = JOptionPane.showInputDialog("who is this?");
+		if(guess4.contentEquals("jack"))
+		{
+			JOptionPane.showMessageDialog(null, "CORRECT");
+			score++;
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, "wrong the person is jack");
+		}
+		
 		// 9. Show them their current score
+		JOptionPane.showMessageDialog(null, "your score is " + score);
 
 	}
 
