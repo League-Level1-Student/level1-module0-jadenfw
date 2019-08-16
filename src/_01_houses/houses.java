@@ -68,7 +68,7 @@ rob.setSpeed(10);
 rob.moveTo(10, 500);
 rob.penDown();
 rob.setPenWidth(5);
-for (int i = 0; i < 10; i++)
+for (int i = 0; i < 24; i++)
 {
 Random ran = new Random();
 int r = ran.nextInt(50)+50;
